@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { RouterView } from "vue-router";
-import TheHeader from "@/components/TheHeader.vue";
-import TheFooter from "./components/TheFooter.vue";
+import TheHeader from "@/components/layout/TheHeader.vue";
+import TheFooter from "@/components/layout/TheFooter.vue";
 </script>
 
 <template>
-  <TheHeader msg="You did it!"> </TheHeader>
-
+  <TheHeader> </TheHeader>
   <RouterView />
   <TheFooter class="the-footer"></TheFooter>
 </template>
@@ -22,8 +21,7 @@ import TheFooter from "./components/TheFooter.vue";
   font-weight: normal;
 }
 
-.the-footer{
+.the-footer {
   margin-top: auto;
 }
-
 </style>
