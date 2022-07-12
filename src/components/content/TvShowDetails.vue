@@ -58,7 +58,7 @@ const averageRating = computed(() =>
   }
   &__image-container {
     width: 100%;
-    background-color: var(--color-grey-d8);
+    background-color: var(--color-grey-ee);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import debounce from "@/helper/debounce";
 
-const mock = vi.fn(() => console.log("executed"));
+const mock = vi.fn();
 const executeAfterThreeHundredMiliSeconds = debounce(() => mock(), 300);
 describe("debounce", () => {
   beforeEach(() => {

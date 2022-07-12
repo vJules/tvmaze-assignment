@@ -6,6 +6,6 @@ import TheFooter from "@/components/layout/TheFooter.vue";
 describe("The footer", () => {
   it("renders properly", () => {
     const wrapper = mount(TheFooter);
-    expect(wrapper.text()).toContain("My footer");
+    expect(wrapper.text()).toContain("Footer");
   });
 });

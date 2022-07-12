@@ -39,22 +39,25 @@ export default {
   <div
     class="search-bar"
     :class="{
-      'search-bar--results-active': props.searchResults.length,
+      'search-bar--results-active': props.searchResults?.length,
     }"
   >
     <input
       class="search-bar__input"
       type="search"
+      data-test-id="search-bar-input"
       @input="(event) => setSearchValue(event)"
       :value="searchValue"
       :placeholder="($attrs.placeholder as string)"
     />
     <div
       class="search-bar__results"
-      :class="{ 'search-bar__results--active': props.searchResults.length }"
+      data-test-id="search-bar-results"
+      :class="{ 'search-bar__results--active': props.searchResults?.length }"
     >
       <RouterLink
         class="search-bar__result-item"
+        data-test-id="search-bar-result-item"
         v-for="result in props.searchResults"
         :key="result.link"
         :to="result.link"

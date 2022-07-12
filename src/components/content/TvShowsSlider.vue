@@ -51,7 +51,8 @@ const modules = [Navigation];
 <style scoped lang="postcss">
 .tv-shows-slider {
   overflow: hidden;
-  padding: 25px 0;
+  padding: 35px 0;
+  border-bottom: 1px solid var(--color-grey-ee);
   &:hover {
     &:deep() {
       .swiper-button-next,
@@ -86,7 +87,7 @@ const modules = [Navigation];
     }
     .swiper-button-next:after,
     .swiper-button-prev:after {
-      font-size: 34px;
+      font-size: 24px;
     }
   }
 }

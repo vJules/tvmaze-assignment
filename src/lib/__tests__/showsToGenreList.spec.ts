@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { showsToGenreList } from "@/lib/showsToGenreList";
-import { mockShowsList } from "../../mocks/tvShows";
+import { mockShowsList } from "../../mocks/tvShowsViewModel";
 
 const expectedGenres = [
   "Action",

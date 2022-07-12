@@ -23,17 +23,17 @@ import { RouterLink } from "vue-router";
   &__title {
     font-weight: bold;
     transition: opacity 0.25s ease-in-out;
-    opacity: 0.75;
   }
 
   &__icon {
     width: 80px;
     height: 80px;
+    transition: color 0.25s ease-in-out;
   }
 
   &:hover {
-    .logo__title {
-      opacity: 1;
+    .logo__icon {
+      color: var(--color-primary);
     }
   }
 }

@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 
 import { mount, RouterLinkStub } from "@vue/test-utils";
 import TvShow from "@/components/content/TvShow.vue";
-import { mockShowsList } from "@/mocks/tvShows";
+import { mockShowsList } from "@/mocks/tvShowsViewModel";
 const mockShow = mockShowsList[0];
 
 describe("TvShow", () => {
